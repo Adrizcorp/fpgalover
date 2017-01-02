@@ -21,5 +21,6 @@ DECA Board.
 --------------
 Contributors:
 
-Holguer A. Becerra
+Holguer A. Becerra.
+
 Sherneyko Plata Rangel.
