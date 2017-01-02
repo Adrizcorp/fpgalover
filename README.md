@@ -16,3 +16,6 @@ Bemicro Max 10.
 
 DECA Board.
 
+Holguer Becerra Daza
+
+Sherneyko Plata R
