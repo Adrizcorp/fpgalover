@@ -16,3 +16,10 @@ Bemicro Max 10.
 
 DECA Board.
 
+
+
+--------------
+Contributors:
+
+Holguer A. Becerra
+Sherneyko Plata Rangel.
