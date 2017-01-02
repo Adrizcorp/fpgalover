@@ -1,0 +1,307 @@
+set_global_assignment -entity "C5G_QSYS" -library "C5G_QSYS" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "C5G_QSYS" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "C5G_QSYS" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../C5G_QSYS.sopcinfo"]
+set_global_assignment -entity "C5G_QSYS" -library "C5G_QSYS" -name SLD_INFO "QSYS_NAME C5G_QSYS HAS_SOPCINFO 1 GENERATION_ID 1483316685"
+set_global_assignment -library "C5G_QSYS" -name MISC_FILE [file join $::quartus(qip_path) "../../C5G_QSYS.cmp"]
+set_global_assignment -library "C5G_QSYS" -name SLD_FILE [file join $::quartus(qip_path) "C5G_QSYS.regmap"]
+set_global_assignment -library "C5G_QSYS" -name SLD_FILE [file join $::quartus(qip_path) "C5G_QSYS.debuginfo"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "C5G_QSYS" -name MISC_FILE [file join $::quartus(qip_path) "../../C5G_QSYS.qsys"]
+
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "C5G_QSYS.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "C5G_QSYS" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_irq_mapper.sv"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mm_interconnect_0.v"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_width_adapter.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_address_alignment.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_uncompressor.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mm_interconnect_0_rsp_xbar_mux_001.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mm_interconnect_0_rsp_xbar_mux.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mm_interconnect_0_rsp_xbar_demux_005.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mm_interconnect_0_rsp_xbar_demux.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mm_interconnect_0_cmd_xbar_mux_005.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mm_interconnect_0_cmd_xbar_mux.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mm_interconnect_0_cmd_xbar_demux_001.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mm_interconnect_0_cmd_xbar_demux.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_adapter.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_traffic_limiter.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_reorder_memory.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_st_pipeline_base.v"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mm_interconnect_0_id_router_005.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mm_interconnect_0_id_router_002.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mm_interconnect_0_id_router.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mm_interconnect_0_addr_router_001.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mm_interconnect_0_addr_router.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_agent.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_switches.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_epcs.v"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_epcs_boot_rom.hex"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_tristate_conduit_bridge_0.sv"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_tristate_conduit_pin_sharer_0.v"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_std_arbitrator_core.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_tristate_conduit_pin_sharer_0_arbiter.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_tristate_conduit_pin_sharer_0_pin_sharer.sv"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_sram.v"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_tristate_controller_aggregator.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_tristate_controller_translator.sv"]
+set_global_assignment -library "C5G_QSYS" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/spi_master_if.vhd"]
+set_global_assignment -library "C5G_QSYS" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/spi_master_core.vhd"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_led_red.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_led_green.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_uart_usb.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_mm_clock_crossing_bridge.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_dc_fifo.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_dcfifo_synchronizer_bundle.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_key.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif.v"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_dll_cyclonev.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_oct_cyclonev.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_hard_memory_controller_top_cyclonev.sv"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_software/sequencer.c"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_software/sequencer.h"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_software/sequencer_defines.h"]
+set_global_assignment -library "C5G_QSYS" -name TCL_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_make_qsys_seq.tcl"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_mm_bridge.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_sequencer_cpu_cv_synth_cpu_inst.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_sequencer_cpu_cv_synth_cpu_inst_test_bench.v"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_sequencer_mem_no_ifdef_params.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_sequencer_rst.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_simple_avalon_mm_bridge.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_irq_mapper.sv"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0.v"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_addr_router.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_addr_router_001.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_addr_router_002.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_cmd_xbar_demux.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_cmd_xbar_demux_001.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_cmd_xbar_demux_002.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_cmd_xbar_mux.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_cmd_xbar_mux_003.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_id_router.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_id_router_002.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_id_router_003.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_rsp_xbar_mux.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_rsp_xbar_mux_001.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_rsp_xbar_mux_002.sv"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_1.v"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_1_addr_router.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_1_cmd_xbar_demux.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_1_cmd_xbar_mux.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_1_id_router.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_1_rsp_xbar_demux.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_1_rsp_xbar_mux.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_reg_file.sv"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_acv_phase_decode.v"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_acv_wrapper.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_mgr.sv"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_reg_file.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_siii_phase_decode.v"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_siii_wrapper.sv"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_sv_phase_decode.v"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_sv_wrapper.sv"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_trk_mgr.sv"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_sequencer_mem.hex"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_AC_ROM.hex"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_inst_ROM.hex"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_clock_pair_generator.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_acv_hard_addr_cmd_pads.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_acv_hard_memphy.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_acv_ldc.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_acv_hard_io_pads.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_generic_ddio.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_reset.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_reset_sync.v"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_phy_csr.sv"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_iss_probe.v"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0.sv"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_altdqdqs.v"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altdq_dqs2_acv_connect_to_hard_phy_cyclonev_lpddr2.sv"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0.ppf"]
+set_global_assignment -library "C5G_QSYS" -name SDC_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0.sdc"]
+set_global_assignment -library "C5G_QSYS" -name TCL_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_timing.tcl"]
+set_global_assignment -library "C5G_QSYS" -name TCL_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_report_timing.tcl"]
+set_global_assignment -library "C5G_QSYS" -name TCL_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_report_timing_core.tcl"]
+set_global_assignment -library "C5G_QSYS" -name TCL_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_pin_map.tcl"]
+set_global_assignment -library "C5G_QSYS" -name TCL_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_pin_assignments.tcl"]
+set_global_assignment -library "C5G_QSYS" -name TCL_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_parameters.tcl"]
+set_global_assignment -library "C5G_QSYS" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_mem_if_lpddr2_emif_pll0.sv"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_jtag_uart.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_timer.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_sysid_qsys.v"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_onchip_memory2.hex"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_onchip_memory2.v"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_nios2_qsys.ocp"]
+set_global_assignment -library "C5G_QSYS" -name SDC_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_nios2_qsys.sdc"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_nios2_qsys.v"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_nios2_qsys_bht_ram.mif"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_nios2_qsys_dc_tag_ram.mif"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_nios2_qsys_ic_tag_ram.mif"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_nios2_qsys_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_nios2_qsys_jtag_debug_module_tck.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_nios2_qsys_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_nios2_qsys_mult_cell.v"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_nios2_qsys_ociram_default_contents.mif"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_nios2_qsys_oci_test_bench.v"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_nios2_qsys_rf_ram_a.mif"]
+set_global_assignment -library "C5G_QSYS" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_nios2_qsys_rf_ram_b.mif"]
+set_global_assignment -library "C5G_QSYS" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/C5G_QSYS_nios2_qsys_test_bench.v"]
+
+set_global_assignment -entity "altera_reset_controller" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_reset_controller" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_irq_mapper" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_irq_mapper"
+set_global_assignment -entity "C5G_QSYS_irq_mapper" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_irq_mapper" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_interconnect_wrapper"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_width_adapter"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_rsp_xbar_mux_001" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_rsp_xbar_mux_001" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_rsp_xbar_mux_001" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_rsp_xbar_mux" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_rsp_xbar_mux" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_rsp_xbar_mux" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_rsp_xbar_demux_005" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_rsp_xbar_demux_005" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_rsp_xbar_demux_005" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_rsp_xbar_demux" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_rsp_xbar_demux" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_rsp_xbar_demux" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_cmd_xbar_mux_005" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_cmd_xbar_mux_005" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_cmd_xbar_mux_005" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_cmd_xbar_mux" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_cmd_xbar_mux" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_cmd_xbar_mux" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_cmd_xbar_demux_001" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_cmd_xbar_demux_001" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_cmd_xbar_demux_001" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_cmd_xbar_demux" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_cmd_xbar_demux" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_cmd_xbar_demux" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_burst_adapter"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_traffic_limiter"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_id_router_005" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_id_router_005" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_id_router_005" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_id_router_002" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_id_router_002" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_id_router_002" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_id_router" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_id_router" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_id_router" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_addr_router_001" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_addr_router_001" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_addr_router_001" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_addr_router" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_addr_router" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mm_interconnect_0_addr_router" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_avalon_sc_fifo"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_slave_agent"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_agent" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_master_agent"
+set_global_assignment -entity "altera_merlin_master_agent" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_merlin_master_agent" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_slave_translator"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_translator" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_master_translator"
+set_global_assignment -entity "altera_merlin_master_translator" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_merlin_master_translator" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_switches" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "C5G_QSYS_switches" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_switches" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_epcs" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_avalon_epcs_flash_controller"
+set_global_assignment -entity "C5G_QSYS_epcs" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_epcs" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_tristate_conduit_bridge_0" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_tristate_conduit_bridge"
+set_global_assignment -entity "C5G_QSYS_tristate_conduit_bridge_0" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_tristate_conduit_bridge_0" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_tristate_conduit_pin_sharer_0" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_tristate_conduit_pin_sharer"
+set_global_assignment -entity "C5G_QSYS_tristate_conduit_pin_sharer_0" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_tristate_conduit_pin_sharer_0" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_tristate_conduit_pin_sharer_0_arbiter" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_merlin_std_arbitrator"
+set_global_assignment -entity "C5G_QSYS_tristate_conduit_pin_sharer_0_arbiter" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_tristate_conduit_pin_sharer_0_arbiter" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_tristate_conduit_pin_sharer_0_pin_sharer" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_tristate_conduit_pin_sharer_core"
+set_global_assignment -entity "C5G_QSYS_tristate_conduit_pin_sharer_0_pin_sharer" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_tristate_conduit_pin_sharer_0_pin_sharer" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_sram" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_generic_tristate_controller"
+set_global_assignment -entity "C5G_QSYS_sram" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_sram" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_tristate_controller_aggregator" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_tristate_controller_aggregator"
+set_global_assignment -entity "altera_tristate_controller_aggregator" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_tristate_controller_aggregator" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_tristate_controller_translator" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_tristate_controller_translator"
+set_global_assignment -entity "altera_tristate_controller_translator" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_tristate_controller_translator" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_led_red" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "C5G_QSYS_led_red" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_led_red" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_led_green" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "C5G_QSYS_led_green" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_led_green" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_uart_usb" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_avalon_uart"
+set_global_assignment -entity "C5G_QSYS_uart_usb" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_uart_usb" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_avalon_mm_clock_crossing_bridge" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_avalon_mm_clock_crossing_bridge"
+set_global_assignment -entity "altera_avalon_mm_clock_crossing_bridge" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_avalon_mm_clock_crossing_bridge" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_key" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "C5G_QSYS_key" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_key" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mem_if_lpddr2_emif" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_mem_if_lpddr2_emif"
+set_global_assignment -entity "C5G_QSYS_mem_if_lpddr2_emif" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mem_if_lpddr2_emif" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_mem_if_dll_cyclonev" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_mem_if_dll"
+set_global_assignment -entity "altera_mem_if_dll_cyclonev" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_mem_if_dll_cyclonev" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_mem_if_oct_cyclonev" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_mem_if_oct"
+set_global_assignment -entity "altera_mem_if_oct_cyclonev" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_mem_if_oct_cyclonev" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_mem_if_hard_memory_controller_top_cyclonev" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_mem_if_lpddr2_hard_memory_controller"
+set_global_assignment -entity "altera_mem_if_hard_memory_controller_top_cyclonev" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_mem_if_hard_memory_controller_top_cyclonev" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mem_if_lpddr2_emif_s0" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_mem_if_lpddr2_qseq"
+set_global_assignment -entity "C5G_QSYS_mem_if_lpddr2_emif_s0" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mem_if_lpddr2_emif_s0" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mem_if_lpddr2_emif_p0" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_mem_if_lpddr2_hard_phy_core"
+set_global_assignment -entity "C5G_QSYS_mem_if_lpddr2_emif_p0" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mem_if_lpddr2_emif_p0" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_mem_if_lpddr2_emif_pll0" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_mem_if_lpddr2_pll"
+set_global_assignment -entity "C5G_QSYS_mem_if_lpddr2_emif_pll0" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_mem_if_lpddr2_emif_pll0" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_jtag_uart" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_avalon_jtag_uart"
+set_global_assignment -entity "C5G_QSYS_jtag_uart" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_jtag_uart" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_timer" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_avalon_timer"
+set_global_assignment -entity "C5G_QSYS_timer" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_timer" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_sysid_qsys" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_avalon_sysid_qsys"
+set_global_assignment -entity "C5G_QSYS_sysid_qsys" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_sysid_qsys" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_onchip_memory2" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "C5G_QSYS_onchip_memory2" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_onchip_memory2" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "C5G_QSYS_nios2_qsys" -library "C5G_QSYS" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "C5G_QSYS_nios2_qsys" -library "C5G_QSYS" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "C5G_QSYS_nios2_qsys" -library "C5G_QSYS" -name IP_TOOL_ENV "Qsys"

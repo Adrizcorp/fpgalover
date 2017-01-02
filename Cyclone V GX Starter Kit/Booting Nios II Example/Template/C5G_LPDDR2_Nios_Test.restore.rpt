@@ -1,0 +1,214 @@
+Restore Archived Project report for C5G_LPDDR2_Nios_Test
+Sat Dec 31 18:44:57 2016
+Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Sat Dec 31 18:44:57 2016 ;
+; Revision Name                   ; C5G_LPDDR2_Nios_Test                  ;
+; Top-level Entity Name           ; C5G_LPDDR2_Nios_Test                  ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test.qar' into the 'D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/' directory
+Info: Generated report 'C5G_LPDDR2_Nios_Test.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/altera/13.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II 32-bit Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 327 megabytes
+    Info: Processing ended: Sat Dec 31 18:44:57 2016
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+
++------------------------------------------------------------------------------------------------------+
+; Files Restored                                                                                       ;
++------------------------------------------------------------------------------------------------------+
+; File Name                                                                                            ;
++------------------------------------------------------------------------------------------------------+
+; C5G_LPDDR2_Nios_Test.qpf                                                                             ;
+; C5G_LPDDR2_Nios_Test.qsf                                                                             ;
+; C5G_LPDDR2_Nios_Test.sdc                                                                             ;
+; C5G_LPDDR2_Nios_Test.v                                                                               ;
+; C5G_LPDDR2_Nios_Test_assignment_defaults.qdf                                                         ;
+; C5G_LPDDR2_Nios_Test_tq.sdc                                                                          ;
+; C5G_QSYS.cmp                                                                                         ;
+; C5G_QSYS.qsys                                                                                        ;
+; C5G_QSYS.sopcinfo                                                                                    ;
+; C5G_QSYS/synthesis/C5G_QSYS.debuginfo                                                                ;
+; C5G_QSYS/synthesis/C5G_QSYS.qip                                                                      ;
+; C5G_QSYS/synthesis/C5G_QSYS.regmap                                                                   ;
+; C5G_QSYS/synthesis/C5G_QSYS.v                                                                        ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_irq_mapper.sv                                                 ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_jtag_uart.v                                                   ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_key.v                                                         ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_lpddr2_status.v                                               ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif.v                                          ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0.ppf                                     ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0.sdc                                     ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0.sv                                      ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_acv_hard_addr_cmd_pads.v                ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_acv_hard_io_pads.v                      ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_acv_hard_memphy.v                       ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_acv_ldc.v                               ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_altdqdqs.v                              ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_clock_pair_generator.v                  ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_generic_ddio.v                          ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_iss_probe.v                             ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_parameters.tcl                          ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_phy_csr.sv                              ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_pin_assignments.tcl                     ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_pin_map.tcl                             ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_report_timing.tcl                       ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_report_timing_core.tcl                  ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_reset.v                                 ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_reset_sync.v                            ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_p0_timing.tcl                              ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_pll0.sv                                    ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0.v                                       ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_AC_ROM.hex                              ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_inst_ROM.hex                            ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_irq_mapper.sv                           ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_make_qsys_seq.tcl                       ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0.v                     ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_addr_router.sv        ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_addr_router_001.sv    ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_addr_router_002.sv    ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_cmd_xbar_demux.sv     ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_cmd_xbar_demux_001.sv ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_cmd_xbar_demux_002.sv ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_cmd_xbar_mux.sv       ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_cmd_xbar_mux_003.sv   ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_id_router.sv          ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_id_router_002.sv      ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_id_router_003.sv      ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_rsp_xbar_mux.sv       ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_rsp_xbar_mux_001.sv   ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_0_rsp_xbar_mux_002.sv   ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_1.v                     ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_1_addr_router.sv        ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_1_cmd_xbar_demux.sv     ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_1_cmd_xbar_mux.sv       ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_1_id_router.sv          ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_1_rsp_xbar_demux.sv     ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_mm_interconnect_1_rsp_xbar_mux.sv       ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_sequencer_mem.hex                       ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_software/sequencer.c                    ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_software/sequencer.h                    ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mem_if_lpddr2_emif_s0_software/sequencer_defines.h            ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mm_interconnect_0.v                                           ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mm_interconnect_0_addr_router.sv                              ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mm_interconnect_0_addr_router_001.sv                          ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mm_interconnect_0_cmd_xbar_demux.sv                           ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mm_interconnect_0_cmd_xbar_demux_001.sv                       ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mm_interconnect_0_cmd_xbar_mux.sv                             ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mm_interconnect_0_cmd_xbar_mux_002.sv                         ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mm_interconnect_0_id_router.sv                                ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mm_interconnect_0_id_router_002.sv                            ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mm_interconnect_0_rsp_xbar_demux.sv                           ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mm_interconnect_0_rsp_xbar_demux_002.sv                       ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mm_interconnect_0_rsp_xbar_mux.sv                             ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_mm_interconnect_0_rsp_xbar_mux_001.sv                         ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_nios2_qsys.ocp                                                ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_nios2_qsys.sdc                                                ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_nios2_qsys.v                                                  ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_nios2_qsys_bht_ram.mif                                        ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_nios2_qsys_dc_tag_ram.mif                                     ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_nios2_qsys_ic_tag_ram.mif                                     ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_nios2_qsys_jtag_debug_module_sysclk.v                         ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_nios2_qsys_jtag_debug_module_tck.v                            ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_nios2_qsys_jtag_debug_module_wrapper.v                        ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_nios2_qsys_mult_cell.v                                        ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_nios2_qsys_oci_test_bench.v                                   ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_nios2_qsys_ociram_default_contents.mif                        ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_nios2_qsys_rf_ram_a.mif                                       ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_nios2_qsys_rf_ram_b.mif                                       ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_nios2_qsys_test_bench.v                                       ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_onchip_memory2.hex                                            ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_onchip_memory2.v                                              ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_sysid_qsys.v                                                  ;
+; C5G_QSYS/synthesis/submodules/C5G_QSYS_timer.v                                                       ;
+; C5G_QSYS/synthesis/submodules/altdq_dqs2_acv_connect_to_hard_phy_cyclonev_lpddr2.sv                  ;
+; C5G_QSYS/synthesis/submodules/altera_avalon_dc_fifo.v                                                ;
+; C5G_QSYS/synthesis/submodules/altera_avalon_mm_bridge.v                                              ;
+; C5G_QSYS/synthesis/submodules/altera_avalon_mm_clock_crossing_bridge.v                               ;
+; C5G_QSYS/synthesis/submodules/altera_avalon_sc_fifo.v                                                ;
+; C5G_QSYS/synthesis/submodules/altera_avalon_st_pipeline_base.v                                       ;
+; C5G_QSYS/synthesis/submodules/altera_dcfifo_synchronizer_bundle.v                                    ;
+; C5G_QSYS/synthesis/submodules/altera_mem_if_dll_cyclonev.sv                                          ;
+; C5G_QSYS/synthesis/submodules/altera_mem_if_hard_memory_controller_top_cyclonev.sv                   ;
+; C5G_QSYS/synthesis/submodules/altera_mem_if_oct_cyclonev.sv                                          ;
+; C5G_QSYS/synthesis/submodules/altera_mem_if_sequencer_cpu_cv_synth_cpu_inst.v                        ;
+; C5G_QSYS/synthesis/submodules/altera_mem_if_sequencer_cpu_cv_synth_cpu_inst_test_bench.v             ;
+; C5G_QSYS/synthesis/submodules/altera_mem_if_sequencer_mem_no_ifdef_params.sv                         ;
+; C5G_QSYS/synthesis/submodules/altera_mem_if_sequencer_rst.sv                                         ;
+; C5G_QSYS/synthesis/submodules/altera_mem_if_simple_avalon_mm_bridge.sv                               ;
+; C5G_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv                                            ;
+; C5G_QSYS/synthesis/submodules/altera_merlin_burst_uncompressor.sv                                    ;
+; C5G_QSYS/synthesis/submodules/altera_merlin_master_agent.sv                                          ;
+; C5G_QSYS/synthesis/submodules/altera_merlin_master_translator.sv                                     ;
+; C5G_QSYS/synthesis/submodules/altera_merlin_reorder_memory.sv                                        ;
+; C5G_QSYS/synthesis/submodules/altera_merlin_slave_agent.sv                                           ;
+; C5G_QSYS/synthesis/submodules/altera_merlin_slave_translator.sv                                      ;
+; C5G_QSYS/synthesis/submodules/altera_merlin_traffic_limiter.sv                                       ;
+; C5G_QSYS/synthesis/submodules/altera_reset_controller.sdc                                            ;
+; C5G_QSYS/synthesis/submodules/altera_reset_controller.v                                              ;
+; C5G_QSYS/synthesis/submodules/altera_reset_synchronizer.v                                            ;
+; C5G_QSYS/synthesis/submodules/sequencer_reg_file.sv                                                  ;
+; C5G_QSYS/synthesis/submodules/sequencer_scc_acv_phase_decode.v                                       ;
+; C5G_QSYS/synthesis/submodules/sequencer_scc_acv_wrapper.sv                                           ;
+; C5G_QSYS/synthesis/submodules/sequencer_scc_mgr.sv                                                   ;
+; C5G_QSYS/synthesis/submodules/sequencer_scc_reg_file.v                                               ;
+; C5G_QSYS/synthesis/submodules/sequencer_scc_siii_phase_decode.v                                      ;
+; C5G_QSYS/synthesis/submodules/sequencer_scc_siii_wrapper.sv                                          ;
+; C5G_QSYS/synthesis/submodules/sequencer_scc_sv_phase_decode.v                                        ;
+; C5G_QSYS/synthesis/submodules/sequencer_scc_sv_wrapper.sv                                            ;
+; C5G_QSYS/synthesis/submodules/sequencer_trk_mgr.sv                                                   ;
+; db/C5G_LPDDR2_Nios_Test.cmp.hdb                                                                      ;
+; db/C5G_LPDDR2_Nios_Test.db_info                                                                      ;
+; incremental_db/compiled_partitions/C5G_LPDDR2_Nios_Test.db_info                                      ;
++------------------------------------------------------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

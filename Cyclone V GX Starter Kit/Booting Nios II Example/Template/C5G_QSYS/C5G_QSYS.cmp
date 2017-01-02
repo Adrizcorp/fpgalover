@@ -1,0 +1,68 @@
+	component C5G_QSYS is
+		port (
+			clk_clk                                                      : in    std_logic                     := 'X';             -- clk
+			key_external_connection_export                               : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- export
+			led_green_export                                             : out   std_logic_vector(7 downto 0);                     -- export
+			led_red_export                                               : out   std_logic_vector(9 downto 0);                     -- export
+			mem_if_lpddr2_emif_avl_0_waitrequest_n                       : out   std_logic;                                        -- waitrequest_n
+			mem_if_lpddr2_emif_avl_0_beginbursttransfer                  : in    std_logic                     := 'X';             -- beginbursttransfer
+			mem_if_lpddr2_emif_avl_0_address                             : in    std_logic_vector(26 downto 0) := (others => 'X'); -- address
+			mem_if_lpddr2_emif_avl_0_readdatavalid                       : out   std_logic;                                        -- readdatavalid
+			mem_if_lpddr2_emif_avl_0_readdata                            : out   std_logic_vector(31 downto 0);                    -- readdata
+			mem_if_lpddr2_emif_avl_0_writedata                           : in    std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			mem_if_lpddr2_emif_avl_0_byteenable                          : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- byteenable
+			mem_if_lpddr2_emif_avl_0_read                                : in    std_logic                     := 'X';             -- read
+			mem_if_lpddr2_emif_avl_0_write                               : in    std_logic                     := 'X';             -- write
+			mem_if_lpddr2_emif_avl_0_burstcount                          : in    std_logic_vector(2 downto 0)  := (others => 'X'); -- burstcount
+			mem_if_lpddr2_emif_pll_sharing_pll_mem_clk                   : out   std_logic;                                        -- pll_mem_clk
+			mem_if_lpddr2_emif_pll_sharing_pll_write_clk                 : out   std_logic;                                        -- pll_write_clk
+			mem_if_lpddr2_emif_pll_sharing_pll_locked                    : out   std_logic;                                        -- pll_locked
+			mem_if_lpddr2_emif_pll_sharing_pll_write_clk_pre_phy_clk     : out   std_logic;                                        -- pll_write_clk_pre_phy_clk
+			mem_if_lpddr2_emif_pll_sharing_pll_addr_cmd_clk              : out   std_logic;                                        -- pll_addr_cmd_clk
+			mem_if_lpddr2_emif_pll_sharing_pll_avl_clk                   : out   std_logic;                                        -- pll_avl_clk
+			mem_if_lpddr2_emif_pll_sharing_pll_config_clk                : out   std_logic;                                        -- pll_config_clk
+			mem_if_lpddr2_emif_pll_sharing_pll_mem_phy_clk               : out   std_logic;                                        -- pll_mem_phy_clk
+			mem_if_lpddr2_emif_pll_sharing_afi_phy_clk                   : out   std_logic;                                        -- afi_phy_clk
+			mem_if_lpddr2_emif_pll_sharing_pll_avl_phy_clk               : out   std_logic;                                        -- pll_avl_phy_clk
+			mem_if_lpddr2_emif_status_local_init_done                    : out   std_logic;                                        -- local_init_done
+			mem_if_lpddr2_emif_status_local_cal_success                  : out   std_logic;                                        -- local_cal_success
+			mem_if_lpddr2_emif_status_local_cal_fail                     : out   std_logic;                                        -- local_cal_fail
+			memory_mem_ca                                                : out   std_logic_vector(9 downto 0);                     -- mem_ca
+			memory_mem_ck                                                : out   std_logic_vector(0 downto 0);                     -- mem_ck
+			memory_mem_ck_n                                              : out   std_logic_vector(0 downto 0);                     -- mem_ck_n
+			memory_mem_cke                                               : out   std_logic_vector(0 downto 0);                     -- mem_cke
+			memory_mem_cs_n                                              : out   std_logic_vector(0 downto 0);                     -- mem_cs_n
+			memory_mem_dm                                                : out   std_logic_vector(3 downto 0);                     -- mem_dm
+			memory_mem_dq                                                : inout std_logic_vector(31 downto 0) := (others => 'X'); -- mem_dq
+			memory_mem_dqs                                               : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- mem_dqs
+			memory_mem_dqs_n                                             : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- mem_dqs_n
+			mm_clock_crossing_bridge_0_m0_waitrequest                    : in    std_logic                     := 'X';             -- waitrequest
+			mm_clock_crossing_bridge_0_m0_readdata                       : in    std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			mm_clock_crossing_bridge_0_m0_readdatavalid                  : in    std_logic                     := 'X';             -- readdatavalid
+			mm_clock_crossing_bridge_0_m0_burstcount                     : out   std_logic_vector(3 downto 0);                     -- burstcount
+			mm_clock_crossing_bridge_0_m0_writedata                      : out   std_logic_vector(31 downto 0);                    -- writedata
+			mm_clock_crossing_bridge_0_m0_address                        : out   std_logic_vector(28 downto 0);                    -- address
+			mm_clock_crossing_bridge_0_m0_write                          : out   std_logic;                                        -- write
+			mm_clock_crossing_bridge_0_m0_read                           : out   std_logic;                                        -- read
+			mm_clock_crossing_bridge_0_m0_byteenable                     : out   std_logic_vector(3 downto 0);                     -- byteenable
+			mm_clock_crossing_bridge_0_m0_debugaccess                    : out   std_logic;                                        -- debugaccess
+			oct_rzqin                                                    : in    std_logic                     := 'X';             -- rzqin
+			reset_reset_n                                                : in    std_logic                     := 'X';             -- reset_n
+			sd_card_cs                                                   : out   std_logic;                                        -- cs
+			sd_card_sclk                                                 : out   std_logic;                                        -- sclk
+			sd_card_mosi                                                 : out   std_logic;                                        -- mosi
+			sd_card_miso                                                 : in    std_logic                     := 'X';             -- miso
+			sd_card_cd                                                   : in    std_logic                     := 'X';             -- cd
+			sd_card_wp                                                   : in    std_logic                     := 'X';             -- wp
+			switches_export                                              : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- export
+			tristate_conduit_bridge_sram_out_sram_tcm_data_out           : inout std_logic_vector(15 downto 0) := (others => 'X'); -- sram_tcm_data_out
+			tristate_conduit_bridge_sram_out_sram_tcm_address_out        : out   std_logic_vector(18 downto 0);                    -- sram_tcm_address_out
+			tristate_conduit_bridge_sram_out_sram_tcm_outputenable_n_out : out   std_logic_vector(0 downto 0);                     -- sram_tcm_outputenable_n_out
+			tristate_conduit_bridge_sram_out_sram_tcm_chipselect_n_out   : out   std_logic_vector(0 downto 0);                     -- sram_tcm_chipselect_n_out
+			tristate_conduit_bridge_sram_out_sram_tcm_byteenable_n_out   : out   std_logic_vector(1 downto 0);                     -- sram_tcm_byteenable_n_out
+			tristate_conduit_bridge_sram_out_sram_tcm_write_n_out        : out   std_logic_vector(0 downto 0);                     -- sram_tcm_write_n_out
+			uart_usb_rxd                                                 : in    std_logic                     := 'X';             -- rxd
+			uart_usb_txd                                                 : out   std_logic                                         -- txd
+		);
+	end component C5G_QSYS;
+

@@ -1,0 +1,308 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/ --output-directory=D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/ --report-file=bsf:D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS.bsf --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CGXFC5C6F27C7 --system-info=DEVICE_SPEEDGRADE=7_H6 --component-file=D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS.qsys
+Progress: Loading C5G_LPDDR2_Nios_Test_uart/C5G_QSYS.qsys
+Progress: Reading input file
+Progress: Adding clk_125 [clock_source 13.1]
+Progress: Parameterizing module clk_125
+Progress: Adding nios2_qsys [altera_nios2_qsys 13.1]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 13.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Adding timer [altera_avalon_timer 13.1]
+Progress: Parameterizing module timer
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding mem_if_lpddr2_emif [altera_mem_if_lpddr2_emif 13.1]
+Progress: Parameterizing module mem_if_lpddr2_emif
+Progress: Adding lpddr2_status [altera_avalon_pio 13.1]
+Progress: Parameterizing module lpddr2_status
+Progress: Adding key [altera_avalon_pio 13.1]
+Progress: Parameterizing module key
+Progress: Adding mm_clock_crossing_bridge_0 [altera_avalon_mm_clock_crossing_bridge 13.1]
+Progress: Parameterizing module mm_clock_crossing_bridge_0
+Progress: Adding uart_usb [altera_avalon_uart 13.1]
+Progress: Parameterizing module uart_usb
+Progress: Adding led_green [altera_avalon_pio 13.1]
+Progress: Parameterizing module led_green
+Progress: Adding led_red [altera_avalon_pio 13.1]
+Progress: Parameterizing module led_red
+Progress: Adding spi_master_0 [spi_master 1.3]
+Progress: Parameterizing module spi_master_0
+Progress: Adding sram [altera_generic_tristate_controller 13.1]
+Progress: Parameterizing module sram
+Progress: Adding tristate_conduit_pin_sharer_0 [altera_tristate_conduit_pin_sharer 13.1]
+Progress: Parameterizing module tristate_conduit_pin_sharer_0
+Progress: Adding tristate_conduit_bridge_0 [altera_tristate_conduit_bridge 13.1]
+Progress: Parameterizing module tristate_conduit_bridge_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: C5G_QSYS.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: C5G_QSYS.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: C5G_QSYS.lpddr2_status: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: C5G_QSYS.key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: C5G_QSYS.sram: Properties (isMemoryDevice) have been set on interface uas - in composed mode these are ignored
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/ --output-directory=D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/ --file-set=QUARTUS_SYNTH --report-file=html:D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS.html --report-file=sopcinfo:D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS.sopcinfo --report-file=cmp:D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS.cmp --report-file=qip:D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/C5G_QSYS.qip --report-file=svd --report-file=regmap:D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/C5G_QSYS.regmap --report-file=debuginfo:D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/C5G_QSYS.debuginfo --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CGXFC5C6F27C7 --system-info=DEVICE_SPEEDGRADE=7_H6 --component-file=D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS.qsys --language=VERILOG
+Progress: Loading C5G_LPDDR2_Nios_Test_uart/C5G_QSYS.qsys
+Progress: Reading input file
+Progress: Adding clk_125 [clock_source 13.1]
+Progress: Parameterizing module clk_125
+Progress: Adding nios2_qsys [altera_nios2_qsys 13.1]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 13.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Adding timer [altera_avalon_timer 13.1]
+Progress: Parameterizing module timer
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding mem_if_lpddr2_emif [altera_mem_if_lpddr2_emif 13.1]
+Progress: Parameterizing module mem_if_lpddr2_emif
+Progress: Adding lpddr2_status [altera_avalon_pio 13.1]
+Progress: Parameterizing module lpddr2_status
+Progress: Adding key [altera_avalon_pio 13.1]
+Progress: Parameterizing module key
+Progress: Adding mm_clock_crossing_bridge_0 [altera_avalon_mm_clock_crossing_bridge 13.1]
+Progress: Parameterizing module mm_clock_crossing_bridge_0
+Progress: Adding uart_usb [altera_avalon_uart 13.1]
+Progress: Parameterizing module uart_usb
+Progress: Adding led_green [altera_avalon_pio 13.1]
+Progress: Parameterizing module led_green
+Progress: Adding led_red [altera_avalon_pio 13.1]
+Progress: Parameterizing module led_red
+Progress: Adding spi_master_0 [spi_master 1.3]
+Progress: Parameterizing module spi_master_0
+Progress: Adding sram [altera_generic_tristate_controller 13.1]
+Progress: Parameterizing module sram
+Progress: Adding tristate_conduit_pin_sharer_0 [altera_tristate_conduit_pin_sharer 13.1]
+Progress: Parameterizing module tristate_conduit_pin_sharer_0
+Progress: Adding tristate_conduit_bridge_0 [altera_tristate_conduit_bridge 13.1]
+Progress: Parameterizing module tristate_conduit_bridge_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: C5G_QSYS.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: C5G_QSYS.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: C5G_QSYS.lpddr2_status: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: C5G_QSYS.key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: C5G_QSYS.sram: Properties (isMemoryDevice) have been set on interface uas - in composed mode these are ignored
+Info: C5G_QSYS: Generating C5G_QSYS "C5G_QSYS" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 17 modules, 64 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 14 modules, 43 connections
+Info: merlin_translator_transform: After transform: 29 modules, 91 connections
+Info: merlin_domain_transform: After transform: 59 modules, 255 connections
+Info: merlin_router_transform: After transform: 74 modules, 303 connections
+Info: merlin_traffic_limiter_transform: After transform: 76 modules, 313 connections
+Info: merlin_burst_transform: After transform: 77 modules, 316 connections
+Info: merlin_network_to_switch_transform: After transform: 106 modules, 381 connections
+Info: merlin_width_transform: After transform: 108 modules, 387 connections
+Info: limiter_update_transform: After transform: 108 modules, 389 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 111 modules, 499 connections
+Info: merlin_hierarchy_transform: After transform: 18 modules, 67 connections
+Info: merlin_mm_transform: After transform: 18 modules, 67 connections
+Info: merlin_interrupt_mapper_transform: After transform: 19 modules, 71 connections
+Info: reset_adaptation_transform: After transform: 24 modules, 93 connections
+Warning: C5G_QSYS: "No matching role found for uart_usb:s1:dataavailable (dataavailable)"
+Warning: C5G_QSYS: "No matching role found for uart_usb:s1:readyfordata (readyfordata)"
+Info: nios2_qsys: Starting RTL generation for module 'C5G_QSYS_nios2_qsys'
+Info: nios2_qsys:   Generation command is [exec C:/altera/13.1/quartus/bin/eperlcmd.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=C5G_QSYS_nios2_qsys --dir=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0002_nios2_qsys_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0002_nios2_qsys_gen//C5G_QSYS_nios2_qsys_processor_configuration.pl  --do_build_sim=0  ]
+Info: nios2_qsys: # 2016.12.31 20:03:22 (*) Starting Nios II generation
+Info: nios2_qsys: # 2016.12.31 20:03:22 (*)   Checking for plaintext license.
+Info: nios2_qsys: # 2016.12.31 20:03:24 (*)   Couldn't query license setup in Quartus directory C:/altera/13.1/quartus
+Info: nios2_qsys: # 2016.12.31 20:03:24 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys: # 2016.12.31 20:03:24 (*)   Plaintext license not found.
+Info: nios2_qsys: # 2016.12.31 20:03:24 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2_qsys: # 2016.12.31 20:03:26 (*)   Couldn't query license setup in Quartus directory C:/altera/13.1/quartus
+Info: nios2_qsys: # 2016.12.31 20:03:26 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys: # 2016.12.31 20:03:26 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: nios2_qsys: # 2016.12.31 20:03:26 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys: # 2016.12.31 20:03:26 (*)   Creating all objects for CPU
+Info: nios2_qsys: # 2016.12.31 20:03:26 (*)     Testbench
+Info: nios2_qsys: # 2016.12.31 20:03:27 (*)     Instruction decoding
+Info: nios2_qsys: # 2016.12.31 20:03:27 (*)       Instruction fields
+Info: nios2_qsys: # 2016.12.31 20:03:28 (*)       Instruction decodes
+Info: nios2_qsys: # 2016.12.31 20:03:29 (*)       Signals for RTL simulation waveforms
+Info: nios2_qsys: # 2016.12.31 20:03:30 (*)       Instruction controls
+Info: nios2_qsys: # 2016.12.31 20:03:30 (*)     Pipeline frontend
+Info: nios2_qsys: # 2016.12.31 20:03:30 (*)     Pipeline backend
+Info: nios2_qsys: # 2016.12.31 20:03:38 (*)   Generating RTL from CPU objects
+Info: nios2_qsys: # 2016.12.31 20:03:46 (*)   Creating encrypted RTL
+Info: nios2_qsys: # 2016.12.31 20:03:49 (*) Done Nios II generation
+Info: nios2_qsys: Done RTL generation for module 'C5G_QSYS_nios2_qsys'
+Info: nios2_qsys: "C5G_QSYS" instantiated altera_nios2_qsys "nios2_qsys"
+Info: onchip_memory2: Starting RTL generation for module 'C5G_QSYS_onchip_memory2'
+Info: onchip_memory2:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=C5G_QSYS_onchip_memory2 --dir=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0003_onchip_memory2_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0003_onchip_memory2_gen//C5G_QSYS_onchip_memory2_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2: Done RTL generation for module 'C5G_QSYS_onchip_memory2'
+Info: onchip_memory2: "C5G_QSYS" instantiated altera_avalon_onchip_memory2 "onchip_memory2"
+Info: sysid_qsys: "C5G_QSYS" instantiated altera_avalon_sysid_qsys "sysid_qsys"
+Info: timer: Starting RTL generation for module 'C5G_QSYS_timer'
+Info: timer:   Generation command is [exec C:/altera/13.1/quartus/bin//perl/bin/perl.exe -I C:/altera/13.1/quartus/bin//perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=C5G_QSYS_timer --dir=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0005_timer_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0005_timer_gen//C5G_QSYS_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: timer: Done RTL generation for module 'C5G_QSYS_timer'
+Info: timer: "C5G_QSYS" instantiated altera_avalon_timer "timer"
+Info: jtag_uart: Starting RTL generation for module 'C5G_QSYS_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=C5G_QSYS_jtag_uart --dir=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0006_jtag_uart_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0006_jtag_uart_gen//C5G_QSYS_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'C5G_QSYS_jtag_uart'
+Info: jtag_uart: "C5G_QSYS" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: pipeline_bridge_swap_transform: After transform: 17 modules, 35 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 17 modules, 35 connections
+Info: mem_if_lpddr2_emif: "C5G_QSYS" instantiated altera_mem_if_lpddr2_emif "mem_if_lpddr2_emif"
+Info: lpddr2_status: Starting RTL generation for module 'C5G_QSYS_lpddr2_status'
+Info: lpddr2_status:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=C5G_QSYS_lpddr2_status --dir=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0007_lpddr2_status_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0007_lpddr2_status_gen//C5G_QSYS_lpddr2_status_component_configuration.pl  --do_build_sim=0  ]
+Info: lpddr2_status: Done RTL generation for module 'C5G_QSYS_lpddr2_status'
+Info: lpddr2_status: "C5G_QSYS" instantiated altera_avalon_pio "lpddr2_status"
+Info: key: Starting RTL generation for module 'C5G_QSYS_key'
+Info: key:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=C5G_QSYS_key --dir=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0008_key_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0008_key_gen//C5G_QSYS_key_component_configuration.pl  --do_build_sim=0  ]
+Info: key: Done RTL generation for module 'C5G_QSYS_key'
+Info: key: "C5G_QSYS" instantiated altera_avalon_pio "key"
+Info: mm_clock_crossing_bridge_0: "C5G_QSYS" instantiated altera_avalon_mm_clock_crossing_bridge "mm_clock_crossing_bridge_0"
+Info: uart_usb: Starting RTL generation for module 'C5G_QSYS_uart_usb'
+Info: uart_usb:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=C5G_QSYS_uart_usb --dir=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0009_uart_usb_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0009_uart_usb_gen//C5G_QSYS_uart_usb_component_configuration.pl  --do_build_sim=0  ]
+Info: uart_usb: Done RTL generation for module 'C5G_QSYS_uart_usb'
+Info: uart_usb: "C5G_QSYS" instantiated altera_avalon_uart "uart_usb"
+Info: led_green: Starting RTL generation for module 'C5G_QSYS_led_green'
+Info: led_green:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=C5G_QSYS_led_green --dir=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0010_led_green_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0010_led_green_gen//C5G_QSYS_led_green_component_configuration.pl  --do_build_sim=0  ]
+Info: led_green: Done RTL generation for module 'C5G_QSYS_led_green'
+Info: led_green: "C5G_QSYS" instantiated altera_avalon_pio "led_green"
+Info: led_red: Starting RTL generation for module 'C5G_QSYS_led_red'
+Info: led_red:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=C5G_QSYS_led_red --dir=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0011_led_red_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/Holguer/AppData/Local/Temp/alt7167_1749988995664467086.dir/0011_led_red_gen//C5G_QSYS_led_red_component_configuration.pl  --do_build_sim=0  ]
+Info: led_red: Done RTL generation for module 'C5G_QSYS_led_red'
+Info: led_red: "C5G_QSYS" instantiated altera_avalon_pio "led_red"
+Info: spi_master_0: "C5G_QSYS" instantiated spi_master "spi_master_0"
+Info: pipeline_bridge_swap_transform: After transform: 5 modules, 10 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 5 modules, 10 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 5 modules, 10 connections
+Info: sram: "C5G_QSYS" instantiated altera_generic_tristate_controller "sram"
+Info: pipeline_bridge_swap_transform: After transform: 4 modules, 7 connections
+Info: No custom instruction connections, skipping transform 
+Info: tristate_conduit_pin_sharer_0: "C5G_QSYS" instantiated altera_tristate_conduit_pin_sharer "tristate_conduit_pin_sharer_0"
+Info: tristate_conduit_bridge_0: "C5G_QSYS" instantiated altera_tristate_conduit_bridge "tristate_conduit_bridge_0"
+Info: pipeline_bridge_swap_transform: After transform: 97 modules, 331 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 97 modules, 331 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 97 modules, 331 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 97 modules, 331 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 97 modules, 331 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 97 modules, 331 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 97 modules, 331 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 97 modules, 331 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 97 modules, 331 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 97 modules, 331 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 97 modules, 331 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 97 modules, 331 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 97 modules, 331 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 97 modules, 331 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 97 modules, 331 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 97 modules, 331 connections
+Info: mm_interconnect_0: "C5G_QSYS" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_0"
+Info: irq_mapper: "C5G_QSYS" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "C5G_QSYS" instantiated altera_reset_controller "rst_controller"
+Info: pll0: "mem_if_lpddr2_emif" instantiated altera_mem_if_lpddr2_pll "pll0"
+Info: p0: Generating clock pair generator
+Info: p0: Generating C5G_QSYS_mem_if_lpddr2_emif_p0_altdqdqs
+Info: p0: 
+Info: p0: *****************************
+Info: p0: 
+Info: p0: Remember to run the C5G_QSYS_mem_if_lpddr2_emif_p0_pin_assignments.tcl
+Info: p0: script after running Synthesis and before Fitting.
+Info: p0: 
+Info: p0: *****************************
+Info: p0: 
+Info: p0: "mem_if_lpddr2_emif" instantiated altera_mem_if_lpddr2_hard_phy_core "p0"
+Info: s0: Generating Qsys sequencer system
+Info: s0: QSYS sequencer system generated successfully
+Info: s0: "mem_if_lpddr2_emif" instantiated altera_mem_if_lpddr2_qseq "s0"
+Info: c0: "mem_if_lpddr2_emif" instantiated altera_mem_if_lpddr2_hard_memory_controller "c0"
+Info: oct0: "mem_if_lpddr2_emif" instantiated altera_mem_if_oct "oct0"
+Info: dll0: "mem_if_lpddr2_emif" instantiated altera_mem_if_dll "dll0"
+Info: tdt: "sram" instantiated altera_tristate_controller_translator "tdt"
+Info: slave_translator: "sram" instantiated altera_merlin_slave_translator "slave_translator"
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_merlin_slave_translator.sv
+Info: tda: "sram" instantiated altera_tristate_controller_aggregator "tda"
+Info: pin_sharer: "tristate_conduit_pin_sharer_0" instantiated altera_tristate_conduit_pin_sharer_core "pin_sharer"
+Info: arbiter: "tristate_conduit_pin_sharer_0" instantiated altera_merlin_std_arbitrator "arbiter"
+Info: nios2_qsys_instruction_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_qsys_instruction_master_translator"
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_merlin_master_translator.sv
+Info: nios2_qsys_instruction_master_translator_avalon_universal_master_0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_qsys_instruction_master_translator_avalon_universal_master_0_agent"
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_merlin_master_agent.sv
+Info: nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_merlin_slave_agent.sv
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: addr_router: "mm_interconnect_0" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "mm_interconnect_0" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "mm_interconnect_0" instantiated altera_merlin_router "id_router_002"
+Info: id_router_003: "mm_interconnect_0" instantiated altera_merlin_router "id_router_003"
+Info: limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "limiter"
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_merlin_traffic_limiter.sv
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_merlin_reorder_memory.sv
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: cmd_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_xbar_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_003"
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_003"
+Info: rsp_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file D:/UBC_2017_Courses/GeneralStochastics/Cyclone_V_GX/C5G_LPDDR2_Nios_Test_uart/C5G_QSYS/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: C5G_QSYS: Done "C5G_QSYS" with 51 modules, 143 files, 4521293 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

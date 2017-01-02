@@ -1,0 +1,71 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.as0 -pg 1
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.p0 -pg 1
+preplace inst C5G_QSYS.tristate_conduit_pin_sharer_0.reset -pg 1
+preplace inst C5G_QSYS.led_red -pg 1 -lvl 4 -y 1050
+preplace inst C5G_QSYS.lpddr2_status -pg 1 -lvl 4 -y 1160
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.afi_reset -pg 1
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.afi_clk -pg 1
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.soft_reset -pg 1
+preplace inst C5G_QSYS.timer -pg 1 -lvl 4 -y 500
+preplace inst C5G_QSYS.onchip_memory2 -pg 1 -lvl 4 -y 1380
+preplace inst C5G_QSYS.sram.tda -pg 1
+preplace inst C5G_QSYS.sram.slave_translator -pg 1
+preplace inst C5G_QSYS.spi_master_0 -pg 1 -lvl 4 -y 1600
+preplace inst C5G_QSYS.sysid_qsys -pg 1 -lvl 4 -y 410
+preplace inst C5G_QSYS.tristate_conduit_pin_sharer_0.pin_sharer -pg 1
+preplace inst C5G_QSYS.led_green -pg 1 -lvl 4 -y 940
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.pll_bridge -pg 1
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.global_reset -pg 1
+preplace inst C5G_QSYS.jtag_uart -pg 1 -lvl 4 -y 1270
+preplace inst C5G_QSYS.clk_125 -pg 1 -lvl 1 -y 730
+preplace inst C5G_QSYS.tristate_conduit_pin_sharer_0 -pg 1 -lvl 4 -y 630
+preplace inst C5G_QSYS.sram -pg 1 -lvl 3 -y 610
+preplace inst C5G_QSYS.mm_clock_crossing_bridge_0 -pg 1 -lvl 5 -y 640
+preplace inst C5G_QSYS.mem_if_lpddr2_emif -pg 1 -lvl 4 -y 50
+preplace inst C5G_QSYS -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst C5G_QSYS.tristate_conduit_pin_sharer_0.arbiter -pg 1
+preplace inst C5G_QSYS.key -pg 1 -lvl 4 -y 810
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.pll0 -pg 1
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.oct0 -pg 1
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.afi_reset_export -pg 1
+preplace inst C5G_QSYS.sram.tdt -pg 1
+preplace inst C5G_QSYS.sram.reset -pg 1
+preplace inst C5G_QSYS.uart_usb -pg 1 -lvl 4 -y 1470
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.dll0 -pg 1
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.c0 -pg 1
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.s0 -pg 1
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.afi_half_clk -pg 1
+preplace inst C5G_QSYS.tristate_conduit_pin_sharer_0.clock -pg 1
+preplace inst C5G_QSYS.sram.clk -pg 1
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.mp_cmd_reset_n_0 -pg 1
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.mp_cmd_clk_0 -pg 1
+preplace inst C5G_QSYS.nios2_qsys -pg 1 -lvl 2 -y 610
+preplace inst C5G_QSYS.tristate_conduit_bridge_0 -pg 1 -lvl 5 -y 770
+preplace inst C5G_QSYS.mem_if_lpddr2_emif.pll_ref_clk -pg 1
+preplace netloc EXPORT<net_container>C5G_QSYS</net_container>(SLAVE)spi_master_0.external,(SLAVE)C5G_QSYS.sd_card) 1 0 4 NJ 1630 NJ 1630 NJ 1630 NJ
+preplace netloc INTERCONNECT<net_container>C5G_QSYS</net_container>(SLAVE)led_red.s1,(SLAVE)spi_master_0.s1,(MASTER)nios2_qsys.data_master,(SLAVE)nios2_qsys.jtag_debug_module,(SLAVE)onchip_memory2.s1,(SLAVE)mm_clock_crossing_bridge_0.s0,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)sram.uas,(SLAVE)uart_usb.s1,(SLAVE)key.s1,(SLAVE)lpddr2_status.s1,(SLAVE)sysid_qsys.control_slave,(MASTER)nios2_qsys.instruction_master,(SLAVE)led_green.s1,(SLAVE)timer.s1) 1 1 4 450 760 700 760 970 740 NJ
+preplace netloc FAN_OUT<net_container>C5G_QSYS</net_container>(SLAVE)mem_if_lpddr2_emif.mp_rfifo_clk_0,(MASTER)mem_if_lpddr2_emif.afi_half_clk,(SLAVE)mm_clock_crossing_bridge_0.m0_clk,(SLAVE)mem_if_lpddr2_emif.mp_cmd_clk_0,(SLAVE)mem_if_lpddr2_emif.mp_wfifo_clk_0) 1 3 2 1030 380 1430
+preplace netloc EXPORT<net_container>C5G_QSYS</net_container>(SLAVE)C5G_QSYS.led_green,(SLAVE)led_green.external_connection) 1 0 4 NJ 970 NJ 970 NJ 970 NJ
+preplace netloc EXPORT<net_container>C5G_QSYS</net_container>(SLAVE)mem_if_lpddr2_emif.status,(SLAVE)C5G_QSYS.mem_if_lpddr2_emif_status) 1 0 4 NJ 320 NJ 320 NJ 320 NJ
+preplace netloc EXPORT<net_container>C5G_QSYS</net_container>(SLAVE)C5G_QSYS.uart_usb,(SLAVE)uart_usb.external_connection) 1 0 4 NJ 1500 NJ 1500 NJ 1500 NJ
+preplace netloc POINT_TO_POINT<net_container>C5G_QSYS</net_container>(MASTER)tristate_conduit_pin_sharer_0.tcm,(SLAVE)tristate_conduit_bridge_0.tcs) 1 4 1 1370
+preplace netloc FAN_OUT<net_container>C5G_QSYS</net_container>(SLAVE)jtag_uart.clk,(SLAVE)tristate_conduit_bridge_0.clk,(SLAVE)key.clk,(SLAVE)mm_clock_crossing_bridge_0.s0_clk,(SLAVE)onchip_memory2.clk1,(SLAVE)tristate_conduit_pin_sharer_0.clk,(SLAVE)led_red.clk,(SLAVE)sram.clk,(SLAVE)timer.clk,(SLAVE)nios2_qsys.clk,(SLAVE)led_green.clk,(SLAVE)sysid_qsys.clk,(SLAVE)uart_usb.clk,(SLAVE)mem_if_lpddr2_emif.pll_ref_clk,(SLAVE)lpddr2_status.clk,(MASTER)clk_125.clk,(SLAVE)spi_master_0.clk) 1 1 4 410 740 720 720 1010 760 1430
+preplace netloc EXPORT<net_container>C5G_QSYS</net_container>(SLAVE)C5G_QSYS.mem_if_lpddr2_emif_pll_sharing,(SLAVE)mem_if_lpddr2_emif.pll_sharing) 1 0 4 NJ 280 NJ 280 NJ 280 NJ
+preplace netloc EXPORT<net_container>C5G_QSYS</net_container>(SLAVE)mem_if_lpddr2_emif.oct,(SLAVE)C5G_QSYS.oct) 1 0 4 NJ 240 NJ 240 NJ 240 NJ
+preplace netloc EXPORT<net_container>C5G_QSYS</net_container>(SLAVE)clk_125.clk_in,(SLAVE)C5G_QSYS.clk) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>C5G_QSYS</net_container>(MASTER)sram.tcm,(SLAVE)tristate_conduit_pin_sharer_0.tcs0) 1 3 1 990
+preplace netloc EXPORT<net_container>C5G_QSYS</net_container>(SLAVE)C5G_QSYS.key_external_connection,(SLAVE)key.external_connection) 1 0 4 NJ 840 NJ 840 NJ 840 NJ
+preplace netloc FAN_OUT<net_container>C5G_QSYS</net_container>(SLAVE)jtag_uart.irq,(SLAVE)key.irq,(SLAVE)timer.irq,(MASTER)nios2_qsys.d_irq,(SLAVE)uart_usb.irq) 1 2 2 NJ 740 950
+preplace netloc INTERCONNECT<net_container>C5G_QSYS</net_container>(SLAVE)timer.reset,(SLAVE)spi_master_0.reset,(SLAVE)mem_if_lpddr2_emif.global_reset,(SLAVE)mem_if_lpddr2_emif.soft_reset,(SLAVE)jtag_uart.reset,(SLAVE)led_green.reset,(MASTER)nios2_qsys.jtag_debug_module_reset,(SLAVE)mm_clock_crossing_bridge_0.s0_reset,(SLAVE)uart_usb.reset,(SLAVE)key.reset,(SLAVE)nios2_qsys.reset_n,(SLAVE)tristate_conduit_bridge_0.reset,(MASTER)clk_125.clk_reset,(SLAVE)lpddr2_status.reset,(SLAVE)tristate_conduit_pin_sharer_0.reset,(SLAVE)sram.reset,(SLAVE)sysid_qsys.reset,(SLAVE)led_red.reset,(SLAVE)onchip_memory2.reset1) 1 1 4 430 780 760 780 930 780 1410
+preplace netloc FAN_OUT<net_container>C5G_QSYS</net_container>(SLAVE)mm_clock_crossing_bridge_0.m0_reset,(SLAVE)mem_if_lpddr2_emif.mp_cmd_reset_n_0,(SLAVE)mem_if_lpddr2_emif.mp_wfifo_reset_n_0,(SLAVE)mem_if_lpddr2_emif.mp_rfifo_reset_n_0,(MASTER)mem_if_lpddr2_emif.afi_reset) 1 3 2 1050 400 1390
+preplace netloc EXPORT<net_container>C5G_QSYS</net_container>(SLAVE)lpddr2_status.external_connection,(SLAVE)C5G_QSYS.lpddr2_status_external_connection) 1 0 4 NJ 1190 NJ 1190 NJ 1190 NJ
+preplace netloc EXPORT<net_container>C5G_QSYS</net_container>(SLAVE)clk_125.clk_in_reset,(SLAVE)C5G_QSYS.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>C5G_QSYS</net_container>(MASTER)C5G_QSYS.mm_clock_crossing_bridge_0_m0,(MASTER)mm_clock_crossing_bridge_0.m0) 1 5 1 N
+preplace netloc EXPORT<net_container>C5G_QSYS</net_container>(SLAVE)mem_if_lpddr2_emif.avl_0,(SLAVE)C5G_QSYS.mem_if_lpddr2_emif_avl_0) 1 0 4 NJ 60 NJ 60 NJ 60 NJ
+preplace netloc EXPORT<net_container>C5G_QSYS</net_container>(SLAVE)C5G_QSYS.led_red,(SLAVE)led_red.external_connection) 1 0 4 NJ 1080 NJ 1080 NJ 1080 NJ
+preplace netloc EXPORT<net_container>C5G_QSYS</net_container>(SLAVE)mem_if_lpddr2_emif.memory,(SLAVE)C5G_QSYS.memory) 1 0 4 NJ 100 NJ 100 NJ 100 NJ
+preplace netloc EXPORT<net_container>C5G_QSYS</net_container>(SLAVE)tristate_conduit_bridge_0.out,(SLAVE)C5G_QSYS.tristate_conduit_bridge_sram_out) 1 0 5 NJ 800 NJ 800 NJ 800 NJ 800 NJ
+levelinfo -pg 1 0 200 1840
+levelinfo -hier C5G_QSYS 210 240 480 820 1180 1500 1630
