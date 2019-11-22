@@ -1,6 +1,6 @@
 # Welcome to FPGAs Lover
 
-☺️☺️☺️☺️☺️💸💸💸 Donate: https://www.paypal.com/donate/?token=WBANrLU959hnz7Y-Ge8g1pOZsIHS2MUtGF8UMVlJZzVfJq5N3ooaQrKceQfBH6Ek6Gx5Jm&country.x=CA&locale.x=CA
+☺️☺️☺️☺️☺️💸💸💸 Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZDBHCGBM6R8WG&source=url
 
 www.fpgalover.com
 
